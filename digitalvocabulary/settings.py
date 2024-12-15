@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'profiles',
+    'vocabularies',
     'rest_framework',
     'rest_framework_simplejwt',
 ]
@@ -153,6 +154,9 @@ SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(days=30),
     "REFRESH_TOKEN_LIFETIME": timedelta(days=35),
 }
+
+
+
 
 
 LOGGING = {
