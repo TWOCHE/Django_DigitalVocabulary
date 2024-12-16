@@ -1,0 +1,12 @@
+# Exported from Render on 2024-12-16T22:43:09Z
+databases:
+- name: django-projects
+  databaseName: digital_vocabulary
+  user: tugce
+  plan: free
+  region: frankfurt
+  ipAllowList:
+  - source: 0.0.0.0/0
+    description: everywhere
+  postgresMajorVersion: "16"
+version: "1"

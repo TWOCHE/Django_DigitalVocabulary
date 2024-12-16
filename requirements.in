@@ -4,3 +4,7 @@ psycopg[binary]
 python-dotenv
 djangorestframework-simplejwt
 drf-spectacular
+dj-database-url
+gunicorn
+uvicorn
+
