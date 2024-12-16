@@ -46,8 +46,10 @@ INSTALLED_APPS = [
     'profiles',
     'vocabularies',
     'exercises',
+
     'rest_framework',
     'rest_framework_simplejwt',
+    'drf_spectacular',
 ]
 
 
@@ -146,7 +148,8 @@ AUTH_USER_MODEL='profiles.CustomUser'
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': ('rest_framework_simplejwt.authentication.JWTAuthentication',),
-    'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.IsAuthenticated',)
+    'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.IsAuthenticated',),
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
 }
 
 from datetime import timedelta
@@ -157,7 +160,12 @@ SIMPLE_JWT = {
 }
 
 
-
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Digital Vocabulary API',
+    'DESCRIPTION': 'A digital dictionary application via Django framework, which provides the infrastructure for users to create and apply their own vocabularies.',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
+}
 
 
 LOGGING = {
