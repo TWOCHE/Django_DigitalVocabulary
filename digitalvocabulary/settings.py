@@ -169,7 +169,7 @@ SIMPLE_JWT = {
 
 SPECTACULAR_SETTINGS = {
     'TITLE': 'Digital Vocabulary API',
-    'DESCRIPTION': 'A digital dictionary application via Django framework, which provides the infrastructure for users to create and apply their own vocabularies.',
+    'DESCRIPTION': 'A digital dictionary application via Django framework, which provides the infrastructure for users to create and apply their own vocabularies- written by Tugce Dogan.',
     'VERSION': '1.0.0',
     'SERVE_INCLUDE_SCHEMA': False,
 }
