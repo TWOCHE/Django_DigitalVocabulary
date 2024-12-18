@@ -1,0 +1,18 @@
+# Exported from Render on 2024-12-17T00:25:21Z
+services:
+- type: web
+  name: django-projects
+  runtime: python
+  repo: https://github.com/TWOCHE/Django_DigitalVocabulary
+  plan: free
+  envVars:
+  - key: WEB_CONCURRENCY
+    sync: false
+  - key: SECRET_KEY
+    sync: false
+  - key: DATABASE_URL
+    sync: false
+  region: frankfurt
+  buildCommand: ./build.sh
+  startCommand: uvicorn digitalvocabulary.asgi:application --host 127.0.0.1 --port 8000 --reload
+version: "1"
